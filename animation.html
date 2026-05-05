@@ -55,6 +55,28 @@
         0% {transform: rotateZ(0deg);}
         50% {transform: rotate(90deg);}
         100% {transform: rotateZ(0deg);}
+    } @keyframes rose {
+        0% {opacity: 0;}
+        15% {opacity: 0.33;}
+        30% {opacity: 0.67;}
+        50% {opacity: 1.00;}
+        65% {opacity: 0.67;}
+        85% {opacity: 0.33;}
+        100% {opacity: 0;}
+    } #rose {
+        width: 150px;
+        position: relative;
+        top: -200px;
+        right: -800px;
+        animation-name: rose;
+        animation-duration: 10s;
+        animation-iteration-count: 3;
+    } button {
+        position: relative;
+        top: -200px;
+        left: 24px;
+        display: block;
+        padding: 8px;
     }
 </style>
 </head>
@@ -63,6 +85,8 @@
     <h1>Selena Quintanilla</h1>
     <img class="selena" src="selena.jpg" />
     <img onClick="document.getElementById('mic').style.animationPlayState='paused';" id="mic" src="microphone.png" />
+    <img id="rose" src="rose.png" />
+    <button onClick="document.getElementById('mic').style.animationPlayState='running';">Readjust Mic</button>
     <figcaption id="mic-cap">Click the microphone when it points toward Selena.</figcaption>
     <p>Selena's rise to fame was like a shooting star: she was brilliant and inspiring, but her life was brief. Despite her untimely end, Selena's memory and music continue to inspire a generation of Latina/o fans.</p>
     <p>Selena Quintanilla was born in 1971 in Lake Jackson, Texas, and she was performing Tejano music with her Mexican-American family around the state at a very young age. By her teens she was on the rise to stardom, and soon her music was hitting the charts. Sometimes called the "Queen of Tejano," Selena's music expanded the audience for Texan-Mexican music, and contributed to a rise in Latin music popularity across the United States. Selena's album Selena Live! won a Grammy Award in 1994, making her the first Tejano artist to win a Grammy. But on March 31, 1995, Selena was killed by a woman who was the ex-president of her fan club the former business manager of her boutique. A final album was released in the month after her death, Dreaming of You, and she became the first music artist to have five Spanish albums simultaneously on the Billboard 200 list.</p>
