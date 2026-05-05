@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selena Quintanilla</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    * {margin: 0; padding: 0;}
+    body {
+        background: black;
+    } h1 {
+        font: 64pt/1.4em 'Great Vibes';
+        text-align: center;
+        color: white;
+        text-shadow: 2px 3px 4px crimson;
+        margin: 48px;
+    } p {
+        width: 80vw;
+        max-width: 70ch;
+        font: 15pt/1.5em Roboto;
+        margin: 18px auto;
+        color: white;
+    } p:first-of-type {
+        margin-top: 72px;
+    } #portrait-photos {
+        width: 82vw;
+        max-width: 780px;
+        max-width: 82vw;
+        margin: 48px auto 48px auto;
+    } .selena {
+        width: 100vw;
+    } #mic {
+        width: 150px;
+        position: relative;
+        top: -200px;
+        z-index: 1;
+        animation-name: microphone;
+        animation-duration: 10s;
+        // animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    } .portrait {
+        width: 40vw;
+        max-width: 384px;
+        max-width: 40vw;
+        cursor: pointer;
+    } figcaption {
+        font: italic 12pt/1.4em Roboto;
+        color: white;
+        text-align: center;
+        margin-bottom: 72px;
+    } #mic-cap {
+        margin: -150px 0 0 12px;
+        text-align: left;
+    } @keyframes microphone {
+        0% {transform: rotateZ(0deg);}
+        50% {transform: rotate(90deg);}
+        100% {transform: rotateZ(0deg);}
+    }
+</style>
+</head>
+
+<body>
+    <h1>Selena Quintanilla</h1>
+    <img class="selena" src="selena.jpg" />
+    <img onClick="document.getElementById('mic').style.animationPlayState='paused';" id="mic" src="microphone.png" />
+    <figcaption id="mic-cap">Click the microphone when it points toward Selena.</figcaption>
+    <p>Selena's rise to fame was like a shooting star: she was brilliant and inspiring, but her life was brief. Despite her untimely end, Selena's memory and music continue to inspire a generation of Latina/o fans.</p>
+    <p>Selena Quintanilla was born in 1971 in Lake Jackson, Texas, and she was performing Tejano music with her Mexican-American family around the state at a very young age. By her teens she was on the rise to stardom, and soon her music was hitting the charts. Sometimes called the "Queen of Tejano," Selena's music expanded the audience for Texan-Mexican music, and contributed to a rise in Latin music popularity across the United States. Selena's album Selena Live! won a Grammy Award in 1994, making her the first Tejano artist to win a Grammy. But on March 31, 1995, Selena was killed by a woman who was the ex-president of her fan club the former business manager of her boutique. A final album was released in the month after her death, Dreaming of You, and she became the first music artist to have five Spanish albums simultaneously on the Billboard 200 list.</p>
+    <p>In the years since her death on March 31, 1995, Selena Quintanilla-Pérez has been commemorated as a lasting cultural icon, with her legacy honored through numerous tributes and accolades.</p>
+    <div id="portrait-photos">
+    <a href="microphone.jpg">
+    <img class="portrait" src="microphone.jpg" />
+    </a>
+    <a href="suit.jpg">
+    <img class="portrait" src="suit.jpg" />
+    </a>
+    </div>
+    <figcaption>Click portrait images to enlarge</figcaption>
+</body>
+</html>
