@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Responsive Design</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<style>
+    * {margin: 0; padding: 0;}
+    @font-face {
+        font-family: Georgia;
+        src: url("Georgia.ttf");
+    } h1 {
+        font: 64pt/1.0em 'Dancing Script';
+        text-align: center;
+        color: rgba(96,61,136,1.00);
+        text-shadow: 1px 2px 3px pink;
+        margin: 48px 0 48px 0;
+    } p {
+        font: 14pt/1.4em Georgia;
+        margin: 12px auto 12px auto;
+        width: 70ch;
+    } img {
+        width: 100vw;
+        margin: 0 0 48px 0;
+	} @media only screen and (max-width: 750px) {
+		img {
+			display:block;
+			margin-left: auto;
+			marging-right: auto;
+			float:none;
+			width: 100%;
+		} p {
+			font: 18pt/1.6em Georgia;
+			width: 80%;
+			margin: 36px auto;
+		}
+    }
+</style>
+</head>
+
+<body>
+<h1>Selena: From Texas to the World</h1>
+<img src="selena.jpg" alt=""/>
+<p>Selena Quintanilla-Pérez (1971–1995), known as the "Queen of Tejano Music," was a groundbreaking Mexican-American singer, songwriter, and fashion designer. She revolutionized the male-dominated Tejano genre, mainstreamed Latin pop, and became an enduring cultural icon representing Mexican-American pride.</p>
+<p style="margin-bottom: 72px;">Selena Quintanilla’s legacy is stronger than ever 30 years after her 1995 death, growing into a multi-generational cultural phenomenon. Her influence spans music, fashion, and Latinx identity, with new fans continuing to discover her work through streaming, documentaries, and enduring memorabilia, while her family keeps her music alive.</p>
+</body>
+</html>
